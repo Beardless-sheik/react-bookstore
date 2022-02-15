@@ -1,7 +1,14 @@
 .app-container {
   width: 90%;
-  margin: 20px auto;
+  margin: 9.35rem auto;
   background-color: #fafafa;
   border-radius: 10px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+
+.main-dividing-line {
+  width: 90%;
+  /* height: 0.125rem; */
+  margin: 2.5rem auto;
+  border: solid 2px #e8e8e8
 }
