@@ -1,19 +1,19 @@
 import styles from './bookItem.module.css';
 
-const BookItem = () => {
+const BookItem = (props) => {
   return(
     <>
       <div className={styles.bookListContainer}>
         <div className={styles.bookDetailsContainer}>
-          <div className={styles.bookGenreText}>Book genre </div>
-          <div className={styles.bookTitleText}> The Hunger Games </div>
-          <div className={styles.bookAuthor}> Book Author </div>
+          <div className={styles.bookGenreText}>{props.genre} </div>
+          <div className={styles.bookTitleText}> {props.title} </div>
+          <div className={styles.bookAuthor}> {props.author} </div>
           <div className={styles.bookMenuButtonContainer} >
-            <span className={styles.bookMenuButton}> Comments </span>
+            <button className={styles.bookMenuButton}> Comments </button>
             <span className={styles.Line}></span> 
-            <span className={styles.bookMenuButton}> Remove </span>
+            <button className={styles.bookMenuButton}> Remove </button>
             <span className={styles.Line}></span> 
-            <span className={styles.bookMenuButton}> Edit </span>
+            <button className={styles.bookMenuButton}> Edit </button>
           </div>
         </div>
         <div className={styles.bookCompletionContainer}> 
@@ -25,14 +25,14 @@ const BookItem = () => {
             </div>
           </div>
           <div className={styles.bookCompletionValueContainer}>
-            <div className={styles.bookCompletionTextValue}> 65% </div>
+            <div className={styles.bookCompletionTextValue}> {props.percentageCompleted} </div>
             <div className={styles.bookCompletionBoolean}> Completed </div>
           </div>
           <span className={styles.Line2}></span> 
         </div>
         <div className={styles.bookCurrentChapterContainer}>
           <div className={styles.currentChapterHeadingText}> CURRENT CHAPTER </div>
-          <div className={styles.currentChapterNumberHeadingText}> Chapter 17  </div>
+          <div className={styles.currentChapterNumberHeadingText}> {props.currentChapter}  </div>
           <button className={styles.updateButton}> 
             <span className={styles.updateButtonText}>UPDATE PROGRESS </span> 
           </button>

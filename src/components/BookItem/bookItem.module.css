@@ -58,6 +58,7 @@
 }
 
 .bookMenuButton {
+  border: none;
   font-family: RobotoSlab;
   font-size: 0.875rem;
   font-weight: 300;
@@ -65,7 +66,9 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  background-color: #fff;
   color: #4386bf;
+  cursor: pointer;
 }
 
 .bookCompletionContainer {
