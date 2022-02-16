@@ -20,7 +20,7 @@ ul {
 .BookstoreCMS {
   margin-left: 6rem;
   height: 2.313rem;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -32,14 +32,14 @@ ul {
 
 .smallLinks {
   margin-left: 2rem;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
-  color: var(--black-two);
+  color: #121212;
 }
 
 .linkOvalUserIcon {
