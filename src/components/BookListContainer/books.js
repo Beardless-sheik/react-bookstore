@@ -1,4 +1,3 @@
-import styles from './books.module.css';
 import BookItem from '../BookItem/bookItem';
 
 const BookListContainer = (props) => {
