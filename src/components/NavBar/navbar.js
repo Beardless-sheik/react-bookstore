@@ -1,15 +1,23 @@
 import React from 'react';
 import styles from './navbar.module.css'; 
+import { Link } from 'react-router-dom';
 import { FaUserAlt } from 'react-icons/fa';
 
 const Navbar = () => {
+  const linkStyle = {
+    textDecoration: "none"
+  };
   return(
     <>
       <div className={styles.navBarContainer}>
         <ul className={styles.mainLinksNav}>
           <li className={styles.BookstoreCMS}> Bookstore CMS</li>  
-          <li className={styles.smallLinks}> BOOKS </li>
-          <li className={styles.smallLinks}> CATEGORIES </li>
+          <li className={styles.smallLinks}> 
+            <Link to="books" style={linkStyle}> BOOKS </Link> 
+          </li>
+          <li className={styles.smallLinks}> 
+            <Link to="categories" style={linkStyle}> CATEGORIES </Link> 
+          </li>
         </ul> 
         <div className={styles.linkOvalUserIcon}>
           <FaUserAlt style={{
