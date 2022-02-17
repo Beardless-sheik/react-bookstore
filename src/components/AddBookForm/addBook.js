@@ -24,6 +24,7 @@ const AddBookForm = () => {
       title,
       genre,
       author: 'author',
+      percentageCompleted: Math.floor(Math.random() * 100),
     };
     dispatch(addBook(newBook));
   };
