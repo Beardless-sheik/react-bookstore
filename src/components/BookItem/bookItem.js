@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import { useRef, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/books/books';
+import { deleteBookAPIThunk } from '../../redux/books/books';
 import styles from './bookItem.module.css';
 
 const BookItem = (props) => {
   const {
-    genre, title, author, percentageCompleted, currentChapter,
+    id, genre, title, author, currentChapter,
   } = props;
+  const percentageCompleted = Math.floor(Math.random() * 100);
   const progressBarRef = useRef(null);
   useEffect(() => {
     let animationPercentageCompleted = 0;
@@ -32,7 +33,7 @@ const BookItem = (props) => {
 
   const dispatch = useDispatch();
   const handleRemoveBook = () => {
-    dispatch(removeBook(props));
+    dispatch(deleteBookAPIThunk(id));
   };
 
   return (
@@ -86,10 +87,10 @@ const BookItem = (props) => {
 };
 
 BookItem.propTypes = {
+  id: PropTypes.string.isRequired,
   genre: PropTypes.string,
   author: PropTypes.string,
   title: PropTypes.string,
-  percentageCompleted: PropTypes.number,
   currentChapter: PropTypes.string,
 };
 
@@ -97,7 +98,6 @@ BookItem.defaultProps = {
   genre: 'Genre Not Given',
   author: 'Author Not Given',
   title: 'Title Not Given',
-  percentageCompleted: '0 %',
   currentChapter: 'Current Chapter Unavailable',
 };
 
