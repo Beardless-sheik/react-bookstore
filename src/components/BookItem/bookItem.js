@@ -1,7 +1,14 @@
 import PropTypes from 'prop-types';
+// import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../../redux/books/books';
 import styles from './bookItem.module.css';
 
 const BookItem = (props) => {
+  const dispatch = useDispatch();
+  const handleRemoveBook = () => {
+    dispatch(removeBook(props));
+  };
   const {
     genre, title, author, percentageCompleted, currentChapter,
   } = props;
@@ -21,7 +28,7 @@ const BookItem = (props) => {
           <div className={styles.bookMenuButtonContainer}>
             <button type="button" className={styles.bookMenuButton}> Comments </button>
             <span className={styles.Line} />
-            <button type="button" className={styles.bookMenuButton}> Remove </button>
+            <button type="button" onClick={handleRemoveBook} className={styles.bookMenuButton}> Remove </button>
             <span className={styles.Line} />
             <button type="button" className={styles.bookMenuButton}> Edit </button>
           </div>
@@ -66,7 +73,7 @@ BookItem.defaultProps = {
   genre: 'Genre Not Given',
   author: 'Author Not Given',
   title: 'Title Not Given',
-  percentageCompleted: '% unavailable',
+  percentageCompleted: '0 %',
   currentChapter: 'Current Chapter Unavailable',
 };
 
