@@ -40,17 +40,17 @@ const BookItem = (props) => {
     <>
       <div className={styles.bookListContainer}>
         <div className={styles.bookDetailsContainer}>
-          <div className={styles.bookGenreText}>
+          <div className={`${styles.bookGenreText} ${styles.fontStretchWeightClass}`}>
             {genre}
           </div>
           <div className={styles.bookTitleText}>
             {title}
           </div>
-          <div className={styles.bookAuthor}>
+          <div className={`${styles.bookAuthor} ${styles.fontStretchWeightClass}`}>
             {author}
           </div>
           <div className={styles.bookMenuButtonContainer}>
-            <button type="button" className={styles.bookMenuButton}> Comments </button>
+            <button type="button" className={`${styles.bookMenuButton} ${styles.fontStretchWeightClass}`}> Comments </button>
             <span className={styles.Line} />
             <button type="button" onClick={handleRemoveBook} className={styles.bookMenuButton}> Remove </button>
             <span className={styles.Line} />
@@ -64,16 +64,16 @@ const BookItem = (props) => {
             </div>
           </div>
           <div className={styles.bookCompletionValueContainer}>
-            <div className={styles.bookCompletionTextValue}>
+            <div className={`${styles.bookCompletionTextValue} ${styles.fontStretchWeightClass}`}>
               {percentageCompleted}
               %
             </div>
-            <div className={styles.bookCompletionBoolean}> Completed </div>
+            <div className={`${styles.bookCompletionBoolean} ${styles.fontStretchWeightClass}`}> Completed </div>
           </div>
           <span className={styles.Line2} />
         </div>
         <div className={styles.bookCurrentChapterContainer}>
-          <div className={styles.currentChapterHeadingText}> CURRENT CHAPTER </div>
+          <div className={`${styles.currentChapterHeadingText} ${styles.fontStretchWeightClass}`}> CURRENT CHAPTER </div>
           <div className={styles.currentChapterNumberHeadingText}>
             {currentChapter}
           </div>

@@ -30,7 +30,7 @@ const AddBookForm = () => {
   return (
     <>
       <div className={styles.bookFormContainer}>
-        <div className={styles.addBookHeadingText}> ADD NEW BOOK </div>
+        <div className={`${styles.addBookHeadingText} ${styles.fontWeightClass}`}> ADD NEW BOOK </div>
         <form>
           <input className={styles.inputBookTitle} value={title} placeholder="Book Title" onChange={handleBookTitleChange} required />
           <select className={styles.inputCategoryBook} onChange={handleGenreTitleChange} name="Category" id="bookCategory" required>
@@ -40,7 +40,7 @@ const AddBookForm = () => {
             <option value="Biography">Biography</option>
           </select>
           <button type="submit" onClick={submitBookToStore} className={styles.addBookSubmitbutton}>
-            <span className={styles.submitButtonText}> ADD BOOK </span>
+            <span className={`${styles.submitButtonText} ${styles.fontWeightClass}`}> ADD BOOK </span>
           </button>
         </form>
       </div>
