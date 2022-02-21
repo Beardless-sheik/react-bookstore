@@ -1,6 +1,49 @@
-# Getting Started with Create React App
+# Bookstore
+
+## Description: 
+
+> React Bookstore is a simulation book Library where a user can add a book where a title is given and a category is given. The data is then displayed as a list of books on the homepage. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Built With
+
+This project is build with:
+
+- HTML
+- CSS
+- React
+- Create React App to bootstrap
+- CCS Modules
+
+
+## Getting Started
+
+If you want to run the project locally in your browser you need to install: 
+
+  - Node
+  - Npm (Node Package Manager)
+  - Git
+  - Text Editor
+
+To get the content of this project locally you need to run this command in your terminal:
+
+ > `git clone https://github.com/Beardless-sheik/react-bookstore.git`
+
+You need to then install the packages locally to your system by running: 
+
+ > npm install 
+
+To start the server in development mode, Run: 
+
+ > npm run dev 
+
+## 👤 Author
+
+👤 **Alick Nyirenda**
+- GitHub: [@beardless_sheik](https://github.com/Beardless-sheik)
+- Twitter: [@beardless_sheik](https://twitter.com/Beardless_Sheik)
+- LinkedIn: [Alick Nyirenda](https://www.linkedin.com/in/alick-nyirenda/)
 
 ## Available Scripts
 
@@ -14,10 +57,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### Test
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For tracking linter errors locally you need to follow these steps:
+
+- And for tracking the linter errors in CSS files run:
+
+  > npx stylelint "**/*.css"
+
+- And for tracking the linter errors in JS files run:
+
+  > npx eslint .
 
 ### `npm run build`
 
@@ -43,7 +93,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
@@ -65,6 +114,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to check the [issues page](https://github.com/Beardless-sheik/AwesomeBooks/issues) for comments and please offer any contributions!
+
+## Show your support
+
+Give a :star: if you like this project!
+
+## Acknowledgments
+
+- Thanks to [Microverse](www.microverse.org) team that helped with project guidelines
