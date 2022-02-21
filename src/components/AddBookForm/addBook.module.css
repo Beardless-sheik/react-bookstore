@@ -1,5 +1,5 @@
 .bookFormContainer {
-  width: 90%;
+  width: 85%;
   margin: 10px auto;
 }
 
@@ -9,10 +9,6 @@
   margin: 1.813rem 0 1.188rem 0;
   font-family: Montserrat, serif;
   font-size: 1.25rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.18px;
   color: #888;
 }
@@ -57,11 +53,14 @@ form {
   height: 1.125rem;
   font-family: RobotoSlab, serif;
   font-size: 0.813rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+.fontWeightClass {
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: #fff;
 }

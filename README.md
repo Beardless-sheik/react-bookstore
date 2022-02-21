@@ -4,7 +4,14 @@
 
 > React Bookstore is a simulation book Library where a user can add a book where a title is given and a category is given. The data is then displayed as a list of books on the homepage. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is [LIVE HERE](https://jovial-jang-ac8ea6.netlify.app/). 
+
+## Screenshots
+
+Screenshot here: 
+
+![Screenshot of bookstore app](./src//screenshots/desktop_screenshot.JPG)
+
 
 ## Built With
 
