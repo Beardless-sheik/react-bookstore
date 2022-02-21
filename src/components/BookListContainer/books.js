@@ -1,8 +1,16 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import BookItem from '../BookItem/bookItem';
+import { getBooksListAPIThunk } from '../../redux/books/books';
 
 const BookListContainer = () => {
+  const dispatch = useDispatch();
   const bookStore = useSelector((state) => state.booksReducer);
+
+  useEffect(() => {
+    dispatch(getBooksListAPIThunk());
+  }, [dispatch]);
+
   const bookItems = bookStore.map((element) => (
     <BookItem
       key={element.id}

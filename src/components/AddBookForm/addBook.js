@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../../redux/books/books';
+import { postBookAPIThunk } from '../../redux/books/books';
 import styles from './addBook.module.css';
 
 const AddBookForm = () => {
@@ -22,11 +22,10 @@ const AddBookForm = () => {
     const newBook = {
       id: uuidv4(),
       title,
-      genre,
-      author: 'author',
-      percentageCompleted: Math.floor(Math.random() * 100),
+      category: genre,
     };
-    dispatch(addBook(newBook));
+    dispatch(postBookAPIThunk(newBook));
+    setTitle('');
   };
   return (
     <>
