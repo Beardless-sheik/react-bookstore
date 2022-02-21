@@ -1,0 +1,55 @@
+.navBarContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 12fr 2fr;
+  background-color: #fff;
+  height: 6rem;
+  margin-bottom: 2.4rem;
+}
+
+.mainLinksNav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.BookstoreCMS {
+  margin-left: 6rem;
+  height: 2.313rem;
+  font-family: Montserrat, serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.smallLinks {
+  margin-left: 2rem;
+  font-family: Montserrat, serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.linkOvalUserIcon {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.875rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+}

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/NavBar/navbar';
+import AddBookForm from './components/AddBookForm/addBook';
+import BookListContainer from './components/BookListContainer/books';
+import CategoryElement from './components/categoryElement/category';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="app-container">
+        <Navbar />
+        <Routes>
+          <Route path="books" element={<BookListContainer />} />
+          <Route path="categories" element={<CategoryElement />} />
+        </Routes>
+        <div className="main-dividing-line" />
+        <AddBookForm />
+      </div>
+    </>
   );
 }
 
